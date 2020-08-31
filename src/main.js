@@ -32,7 +32,9 @@ Vue.prototype.$http = axios
 //这是线上的API接口,如果使用本地的可以注释选择本地的服务
 // axios.defaults.baseURL = 'https://www.zykhome.club/api/'
 
-axios.defaults.baseURL = 'http://localhost:9003/'
+// axios.defaults.baseURL = 'http://localhost:9003/'
+
+axios.defaults.baseURL = process.env.VUE_APP_BASE_API
 
 
 

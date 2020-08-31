@@ -51,6 +51,10 @@ const routes = [
       path: '/departments',
       component: Departments,
     },
+      {
+        path: '/teachers',
+        component: () => import('@/views/edu/teacher/Teachers')
+      },
     {
       path: '/loginLog',
       component: LoginLog
