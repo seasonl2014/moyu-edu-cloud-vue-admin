@@ -53,7 +53,23 @@ const routes = [
     },
       {
         path: '/teachers',
+        meta:{title: '教师管理'},
         component: () => import('@/views/edu/teacher/Teachers')
+      },
+      {
+        path: '/subject',
+        meta:{title: '课程分类管理'},
+        component: () => import('@/views/edu/subject/Subjects')
+      },
+      {
+        path: '/course',
+        meta:{title: '课程管理'},
+        component: () => import('@/views/edu/course/Courses')
+      },
+      {
+        path: '/vipType',
+        meta:{title: '会员类型'},
+        component: () => import('@/views/edu/viptype/VipTypes')
       },
     {
       path: '/loginLog',
